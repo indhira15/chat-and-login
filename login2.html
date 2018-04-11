@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="/la_ruta_de_tu_dominio/jquery/jquery-3.1.1.min.js"></script>
+
+<link rel="script" type="text/html" href="after.html">
+<style>
+button[type=submit] {
+background-color: #419DDF;
+border:#419DDF;
+color: white;
+padding: 14px 20px;
+margin-left: 350px;
+border-radius: 4px;
+cursor:pointer;
+}
+
+input[type=password] {
+width:450px;
+padding:12px;
+border-radius:4px;
+border: 2px solid #D0D0D0;
+margin:20px;
+}
+input[type=text] {
+width:450px;
+padding:12px;
+border-radius:4px;
+border: 2px solid #D0D0D0;
+margin-top:20px;
+}
+
+form{
+margin: 70px auto;
+width:600px;
+height: 350px;
+border:7px solid #D0D0D0;
+
+}
+</style>
+<script>
+
+	
+function entrar(){
+	var user = document.getElementById("username").value;
+	var pass = document.getElementById("password").value;
+	document.getElementById("demo")=true;
+	if (user=='jbellido' && pass== 'jbellido'){
+		alert('hi');
+	}
+	else{
+		alert('Oh snap! Invalid username or password');
+	}
+}
+
+</script>
+</head>
+<body>
+	<div>
+	<form style="padding-top:2px;" onsubmit="myFunction()">
+		<ul style="text-align:center; list-style-type:none;">
+
+	    	<li><h1 style="color:#D0D0D0;">MyCHAT</h1></li>
+					<!--<div class="alert alert-danger alert-dismissible">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<strong>Oh snap!</strong> Invalid password or username
+					  </div>
+
+
+
+function entrar(){
+	var user = document.getElementById('username').value;
+	var pass = document.getElementById('password').value;
+	if (name=="jbellido" && pass= "jbellido"){
+		return true
+	}
+	else{
+		alert("Oh snap! Invalid username or password is")
+	}
+};
+
+document.getElementById("demo").innerHTML = x;
+
+-->
+	    	<li><div><input id="username" type="text" class="login-input" placeholder="Username" ></div></li>
+	    	<li><div style="padding: 0px"><input id="password" type="password" class="login-input" placeholder="Text input"></div></li>
+			<li><button type="submit" onclick="entrar()"><a href="after.html" style="text-decoration:none;">LOG IN</a></button></li>
+		</ul>
+	</form>
+	</div>
+
+</body>
+
+</html>
